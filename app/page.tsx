@@ -4,17 +4,16 @@ import path from 'path';
 import Link from 'next/link';
 
 export default function Home() {
-
-  const appDirectory = path.join(process.cwd(), 'app');
-
-  // Filtra os diretórios que têm uma página `page.tsx` dentro
-  const routes = fs
-    .readdirSync(appDirectory, { withFileTypes: true })
-    .filter(
-      (dirent) =>
-        dirent.isDirectory() &&
-        fs.existsSync(path.join(appDirectory, dirent.name, 'page.tsx'))
-    )
+    return (
+      <div>
+        Link para o meu GitHub &#128073; 
+        <a href="https://github.com/DefNixx">
+          Nícolas André
+        </a>
+      </div >
+    );
+  }
+    
     .map((dirent) => dirent.name);
 
   return (
