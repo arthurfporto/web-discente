@@ -3,7 +3,7 @@ export default function Home() {
       <div>
         Link para o meu GitHub &#128073; 
         <a href="https://github.com/CaiaoCesar">
-            Caio César Oliveira Silva 
+            CAIO CÉSAR OLIVEIRA SILVA
         </a>
       </div >
     );
